@@ -17,7 +17,11 @@ DEBUG = False # keep this false when you wants to use custom page for 404 pages.
 # python manage.py runserver --insecure
 
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    ".railway.app",
+]
 
 
 # Application definition
