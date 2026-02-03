@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+    <section class="error-page">
+        <div class="container text-center">
+            <h1>404</h1>
+            <h2>Oops! page not found...</h2>
+            <p>The page you are looking for doesn’t exist or was moved.</p>
+
+            <a href="{% url 'index' %}" class="btn btn-primary">Go Back Home</a>
+        </div>
+    </section>
+
+{% endblock %}
