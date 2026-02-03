@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("myportfolio/", include("myportfolioapp.urls")),
+    path("", include("myportfolioapp.urls")),
 ]
 # Serve media files at /media/ in development
 if settings.DEBUG:
