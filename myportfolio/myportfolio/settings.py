@@ -20,7 +20,7 @@ DEBUG = False # keep this false when you wants to use custom page for 404 pages.
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    ".railway.app",
+    ".onrender.com",
 ]
 
 
