@@ -149,6 +149,9 @@ cloudinary.config(
     api_key = os.environ.get("CLOUDINARY_API_KEY"),
     api_secret = os.environ.get("CLOUDINARY_API_SECRET"),
 )
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = "/"
 if DEBUG:
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -156,7 +159,6 @@ if DEBUG:
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # self created constants
 SITE_NAME = "Shreenivas Rupesh Hadgal - Python Developer"
