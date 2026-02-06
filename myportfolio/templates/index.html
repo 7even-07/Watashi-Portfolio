@@ -88,7 +88,7 @@
                         </div>
                         <div class="portfolio-content">
                             <h4>{{ project.name }}</h4>
-                            <p>{{ project.desc|truncatewords:100 }}</p>
+                            <p>{{ project.desc|truncatewords:10 }}</p>
                             <div class="portfolio-tech">
                                 {% for tag in project.tags.all %}
                                     <span class="tech-tag">{{ tag.name }}</span>
