@@ -8,7 +8,7 @@ def index(request):
     # projects = Project.objects.select_related("tag")
 
     # use prefetch_related to fetch multiple data from relation
-    projects = Project.objects.prefetch_related("tags")
+    projects = Project.objects.prefetch_related("tags").order_by("-id")
 
     if request.method == "POST" and request.POST.get("form_type") == "contact":
         name = request.POST.get("name", "").strip()
