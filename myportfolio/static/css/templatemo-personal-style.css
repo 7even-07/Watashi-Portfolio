@@ -775,16 +775,16 @@ https://templatemo.com/tm-593-personal-shape
         } */
 
         .portfolio-image {
-            width: 100% !important;
-            height: 250px !important; 
-            overflow: hidden !important;
+            width: 100%;
+            height: 250px; 
+            overflow: hidden;
         }
 
         .portfolio-image img {
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-            display: block !important;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         /* .portfolio-item:nth-child(1) .portfolio-image {
