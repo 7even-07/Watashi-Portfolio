@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ofnqlb-42e3w&ut-yzewl=&a&*9rxif&f3z5g#+p2o=)uap1u#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # keep this false when you wants to use custom page for 404 pages.
+DEBUG = True # keep this false when you wants to use custom page for 404 pages.
 # run this only in development mode, cause if you set DEBUG = False then it does not sever static files
 # python manage.py runserver --insecure
 
