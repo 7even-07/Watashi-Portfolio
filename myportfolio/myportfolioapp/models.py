@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)
@@ -11,7 +12,10 @@ class Project(models.Model):
     desc = models.TextField()
     link = models.CharField(max_length=255, blank=True, null=True)
     tags = models.ManyToManyField(Tag, related_name="projects")
-    image = models.ImageField(upload_to='projects/')
+    image = CloudinaryField(
+        'image',
+        folder='projects'
+    )
 
     def __str__(self):
         return self.name
